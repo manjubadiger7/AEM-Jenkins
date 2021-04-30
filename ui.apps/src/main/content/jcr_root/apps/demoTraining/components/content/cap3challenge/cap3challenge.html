@@ -1,0 +1,83 @@
+<h2>Coding Challenge</h2>
+
+<div
+	data-sly-use.model="com.adobe.secondProject.core.models.CodeChallenge"></div>
+<div>
+	<p>FirstName: ${model.firstName}</p>
+</div>
+---------------------------------------------------
+<div>
+	<p>Last Name: ${model.lastName}</p>
+</div>
+---------------------------------------------------
+<div>
+	<p>Is Graduted: ${model.graduate}</p>
+</div>
+--------------------------------------------------
+<div>
+	<p>Phone Number: ${model.phone}</p>
+</div>
+--------------------------------------------------
+<div>
+	<p>Gender: ${model.gender}</p>
+</div>
+--------------------------------------------------
+<div>
+	<p>Country: ${model.country}</p>
+</div>
+***************************************************
+<h2>Multi field</h2>
+<div>
+	<p>Books with multi field</p>
+	<ul data-sly-list.item="${model.books}">
+		<li>${itemList.count}: ${item}</li>
+	</ul>
+</div>
+-----------------------------------------------------
+<p>examaple for dat-sly-include</p>
+--------------------------------------------------------
+<div>
+	<p>Including Page With data-sly-include</p>
+	<p data-sly-include="pageTwo.html"></p>
+</div>
+
+----------------------------------------------------
+<p>examaple for data-sly-template and data-sly-call</p>
+-----------------------------------------------------
+<div>
+	<p>
+		<b><template data-sly-template.one>This is sample
+			template tags and displayed usimg call</template></b> <br>
+	<p>
+	<div>
+		<p data-sly-call="${one}"></p>
+	</div>
+	</p>
+</div>
+------------------------------------------------------
+<p>examaple for data-sly-text</p>
+-------------------------------------------------------
+<div>
+	<p data-sly-text="${model.firstName}">Replacing Text</p>
+</div>
+--------------------------------------------------------
+<h2>Multi field with data-sly-test</h2>
+<p>--------------------------------------------------------</p>
+<div>
+	<p>Books with Even number</p>
+	<ul data-sly-list.item="${model.books}">
+		<sly data-sly-test="${itemList.even}">
+		<li>${itemList.count}: ${item}</li>
+		</sly>
+	</ul>
+</div>
+<p>--------------------------------------------------------------</p>
+<img src="${model.fileReference}" / width=600 height="350">
+
+<p>--------------------------------------------------------------</p>
+
+<div>
+
+	<p>Path: ${model.pathBrowser}</p>
+</div>
+<p>--------------------------------------------------------------</p>

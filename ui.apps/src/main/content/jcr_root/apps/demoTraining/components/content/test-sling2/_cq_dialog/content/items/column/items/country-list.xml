@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Widget"
+    sling:resorceType="granite/ui/components/coral/foundation/form/select"
+    fieldLabel="Country Select"
+    name="./country"
+    type="select"
+    xtype="selection">
+    <items jcr:primaryType="nt:unstructured">
+        <v1
+            jcr:primaryType="nt:unstructured"
+            text="India"
+            value="india"/>
+    </items>
+</jcr:root>

@@ -1,0 +1,64 @@
+<h3>Sightly headding</h3>
+
+<h2>Sling test two</h2>
+
+<div
+	data-sly-use.model="${'com.adobe.secondProject.core.models.SightlyDemo' @ reqAttribute = 'SlightlyToSling'}"></div>
+<div>FirstName: ${model.firstName}</div>
+<div>LastName ${model.lastName}</div>
+<div>isGraduate: ${model.graduate}</div>
+<div>PageTitle: ${model.pageTitle}</div>
+<div>Phone: ${model.phone}</div>
+<div>Request Attribute: ${model.requestAttribute}</div>
+<div>Description: ${model.description}</div>
+
+<h3>Books</h3>
+<div data-sly-list.item="${model.authBooks}">
+	============= Book : ${itemList.count} ====================
+	<p>
+		Book Name: <b>${item}</b>
+	</p>
+</div>
+--------------------------------------------------
+
+<h3>Books with list</h3>
+<ol data-sly-list="${model.authBooks}">
+	<li>${item}</li>
+</ol>
+--------------------------------------------------
+
+<h3>Books with repeat</h3>
+<ol data-sly-repeat="${model.authBooks}">
+	<li>${item}</li>
+</ol>
+
+---------------------------------------------------
+
+<h3>Books with props</h3>
+<ol data-sly-list="${model.authBooks}">
+	<sly data-sly-test="${itemList.middle}">
+		<li>${item}</li>
+	</sly>
+</ol>
+
+----------------------------------------------------
+
+<div>Country: ${model.country}</div>
+
+<div>Gender: ${model.gender}</div>
+
+<!-- test and unwrap -->
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>This is in
+	edit mode</div>
+
+This is in edit mode
+
+<!-- we can also write unwrap using directly <sly>  -->
+<br>
+<sly>Hello with sly</sly>
+
+
+<div data-sly-include="/page2.html"></div>
+<div data-sly-include="/style.css">Text with style</div>
+
+<p data-sly-text="${model.firstName}">Hello</p>
