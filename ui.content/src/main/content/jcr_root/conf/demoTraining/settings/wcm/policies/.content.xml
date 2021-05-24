@@ -9,10 +9,12 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
                         jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2021-05-04T18:52:02.215+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="demoTrainingSite Default"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:demoTraining,/apps/demoTraining/components/form/container]"
+                        components="[group:General,group:demoTraining,/apps/demoTraining/components/form/container,/apps/sightlySling/components/structure/codeChallenge]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -30,8 +32,14 @@
                             mergeList="{Boolean}true"/>
                     </content-default>
                 </responsivegrid>
+                <title jcr:primaryType="nt:unstructured"/>
             </components>
         </foundation>
+        <designimporter jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <title jcr:primaryType="nt:unstructured"/>
+            </components>
+        </designimporter>
     </wcm>
     <demoTraining jcr:primaryType="nt:unstructured">
         <components jcr:primaryType="nt:unstructured">
@@ -46,6 +54,198 @@
                     </form-container>
                 </container>
             </form>
+            <content jcr:primaryType="nt:unstructured">
+                <title jcr:primaryType="nt:unstructured">
+                    <policy_1620132060335
+                        jcr:lastModified="{Date}2021-05-04T19:17:15.809+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Home Page"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedTypes="[h1,h2,h3,h4,h5,h6]"
+                        linkDisabled="false"
+                        type="h1">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Align"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="text-left"
+                                        cq:styleId="1620132096513"
+                                        cq:styleLabel="left"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="text-right"
+                                        cq:styleId="1620132105588"
+                                        cq:styleLabel="right"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item2
+                                        cq:styleClasses="text-center"
+                                        cq:styleId="1620134576304"
+                                        cq:styleLabel="center"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                            <item1
+                                cq:styleGroupLabel="Text Color"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="text-danger"
+                                        cq:styleId="1620136011746"
+                                        cq:styleLabel="Error"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item1>
+                        </cq:styleGroups>
+                    </policy_1620132060335>
+                </title>
+                <text jcr:primaryType="nt:unstructured">
+                    <policy_1620132510721
+                        jcr:lastModified="{Date}2021-05-04T18:19:52.170+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="text"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="-">
+                                <formats
+                                    jcr:primaryType="nt:unstructured"
+                                    override="true">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Paragraph"
+                                        tag="p"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading 1"
+                                        tag="h1"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading 2"
+                                        tag="h2"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading 3"
+                                        tag="h3"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading 4"
+                                        tag="h4"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading 5"
+                                        tag="h5"/>
+                                    <item6
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Heading 6"
+                                        tag="h6"/>
+                                    <item7
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Quote"
+                                        tag="blockquote"/>
+                                    <item8
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Horizontal Rule (visual line break)"
+                                        tag="hr"/>
+                                    <item9
+                                        jcr:primaryType="nt:unstructured"
+                                        description="Preformatted"
+                                        tag="pre"/>
+                                </formats>
+                            </paraformat>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="-">
+                                <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                    <chars
+                                        jcr:primaryType="nt:unstructured"
+                                        override="true">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            entity="&amp;copy;"
+                                            name="copyright"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            entity="&amp;euro;"
+                                            name="euro"/>
+                                        <item2
+                                            jcr:primaryType="nt:unstructured"
+                                            entity="&amp;reg;"
+                                            name="registered"/>
+                                        <item3
+                                            jcr:primaryType="nt:unstructured"
+                                            entity="&amp;trade;"
+                                            name="trademark"/>
+                                    </chars>
+                                </specialCharsConfig>
+                            </misctools>
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <findreplace
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <undo
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <spellcheck
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <justify
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="bold,italic"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="modifylink,unlink"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="-"/>
+                        </rtePlugins>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Align"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="text-left"
+                                        cq:styleId="1620132516794"
+                                        cq:styleLabel="left"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="text-right"
+                                        cq:styleId="1620132520177"
+                                        cq:styleLabel="right"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1620132510721>
+                </text>
+            </content>
         </components>
     </demoTraining>
+    <foundation jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <title jcr:primaryType="nt:unstructured"/>
+            <text jcr:primaryType="nt:unstructured"/>
+        </components>
+    </foundation>
 </jcr:root>

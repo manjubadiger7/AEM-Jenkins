@@ -1,6 +1,13 @@
-<h2>Hello manju</h2>
-<div data-sly-use.model="com.adobe.secondProject.core.models.TestSling"></div>
-
-<div>FirstName: ${model.firstName}</div>
-<div>FirstName: ${model.lastName}</div>
-<div>FirstName: ${model.graduate}</div>
+<h2>resource resolver</h2>
+<div
+	data-sly-use.model="com.adobe.secondProject.core.models.ResolverModel"></div>
+<div>
+	<p>Page Name: ${model.pageName}</p>
+	<p>Page Name: ${model.lastModifiedBy}</p>
+	<p>Page Name: ${model.pageTitle}</p>
+	<p>Page Name: ${model.path}</p>
+	<p>Page Name: ${model.title}</p>
+	<p>Page Name: ${model.vanityURL}</p>
+	<p>Page Name: ${model.depth}</p>
+	<p>Page Name: ${model.parentPageName}</p>
+</div>

@@ -1,48 +1,48 @@
 package com.adobe.secondProject.core.models;
 
 import java.util.ArrayList;
+
+
 import java.util.Collections;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import org.apache.sling.api.resource.Resource;
 import javax.inject.Inject;
 
-import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Via;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
-@Model(adaptables = SlingHttpServletRequest.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class CodeChallenge {
 
 	@Inject
-	@Via("resource")
 	String firstName;
 
 	@Inject
-	@Via("resource")
 	String lastName;
 
-	@ValueMapValue
+	@Inject
 	boolean graduate;
 
-	@ValueMapValue
+	@Inject
 	long phone;
 
-	@ValueMapValue
+	@Inject
 	String gender;
 
-	@ValueMapValue
+	@Inject
 	String country;
 
-	@ValueMapValue
+	@Inject
 	private List<String> books;
 
-	@ValueMapValue
+	@Inject
 	String fileReference;
-	
-	@ValueMapValue
+
+	@Inject
 	String pathBrowser;
 
 	public String getFirstName() {
@@ -87,5 +87,5 @@ public class CodeChallenge {
 	public String getPathBrowser() {
 		return pathBrowser;
 	}
-	
+
 }
